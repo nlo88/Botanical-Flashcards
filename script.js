@@ -1,6 +1,3 @@
-
-console.log("CONNECTED")
-
 var displayCardsArray = [
     {'name': 'Eucalyptus', 'img': '	https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Eucalyptus.jpg?raw=true',},
     {'name': 'Ginger', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/ginger.jpg?raw=true',},
@@ -35,6 +32,7 @@ var displayCardsArray = [
     {'name': 'Cilantro', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Cilantro.jpg?raw=true',},
     {'name' : 'Tarragon', 'img' : 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Taragon.jpg?raw=true',}
 ];
+
 var indexCardsArray = [
     {'name': 'Parsley', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Parsley-Index.jpg?raw=true',},
     {'name': 'Arugula', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Arugula-Index.jpg?raw=true',},
@@ -50,8 +48,8 @@ var indexCardsArray = [
     {'name': 'Echinacea', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Echinacea-Index.jpg?raw=true',},
     {'name': 'Elderberry', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Elderberry-Index.jpg?raw=true',},
     {'name': 'Eucalyptus', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Eucalyptus-Index.jpg?raw=true',},
-    {'name': 'Fennel', 'img': '	https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Fennel-Index.jpg?raw=true',},
-    {'name': 'Garlic', 'img': '	https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Garlic-Index.jpg?raw=true',},
+    {'name': 'Fennel', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Fennel-Index.jpg?raw=true',},
+    {'name': 'Garlic', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Garlic-Index.jpg?raw=true',},
     {'name': 'Lavender', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Lavender-Index.jpg?raw=true',},
     {'name': 'Licorice', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Licorice-Index.jpg?raw=true',},
     {'name': 'Oregano', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Oregano-Index.jpg?raw=true',},
@@ -62,7 +60,7 @@ var indexCardsArray = [
     {'name': 'Sage', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/sage-Index.jpg?raw=true',},
     {'name': 'Star-Anise', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Star-Anise-Index.jpg?raw=true'},
     {'name': 'Chive', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Chive-Index.jpg?raw=true',},
-    {'name': 'Thyme', 'img': '	https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Thyme-Index.jpg?raw=true',},
+    {'name': 'Thyme', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Thyme-Index.jpg?raw=true',},
     {'name': 'Valerian', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Valerian-Index%20copy.jpg?raw=true',},
     {'name': 'Ginger', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Ginger-Index.jpg?raw=true',},
     {'name': 'Tarragon', 'img': 'https://github.com/nlo88/Botanical-Flashcards/blob/main/Images/Tarragon-Index.jpg?raw=true',}
@@ -70,69 +68,47 @@ var indexCardsArray = [
 
 // assign a variable name to section class = image-container
 var target =document.getElementById('image-container');
-// assign function to display images on the flecbox class name = cardPlacement
-displayCardsArray.forEach(function(imgSrc){
+displayCardsArray.forEach(function(displayCard) {
+    
     var newImg = document.createElement('img');
-    newImg.src = imgSrc.img;
+    newImg.src = displayCard.img;
+    
+    newImg.addEventListener('click', function (event){ 
+            let match = indexCardsArray.find(element => element.name === displayCard.name )
+            console.log(match)
+
+            const indexImg = document.querySelector('.index-card');
+            indexImg.innerHTML = "";
+            
+            const matchingIndexImg =document.createElement('img');
+            matchingIndexImg.src = match.img;
+            indexImg.appendChild(matchingIndexImg)
+            
+            
+            const imgLink = document.createElement('a')
+            imgLink.href = `https://en.wikipedia.org/wiki/${match.name}`
+            imgLink.innerHTML = "more info..";
+            indexImg.appendChild(imgLink)
+                        
+            toggleModal();
+    })
+
     target.appendChild(newImg)
 })
 
-const openModalIndex =document.querySelectorAll('[data-modal-target]')
+const modal = document.querySelector(".modal");
+const closeButton = document.querySelector(".close-button");
 
-openModalIndex.forEach( popIndex => {
-    popIndex.addEventListener('click',() => {
-        const modal = document.querySelector(popIndex.dataset.modalTarget)
-            })
-    })
-   
-// //duplicate displayCartArray 
-// var gameGrid = displayCardsArray.concat(displayCardsArray);
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+}
 
-// // Random game grid on each load
-// gameGrid.sort(function() {
-//     return 0.5 -Math.random();
-// })
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
 
-
-// var game = document.getElementById('game-board');
-// // create a section element and assign it to the variable grid
-// var grid =document.createElement('section');
-// // give a section element a class of a grid
-// grid.setAttribute('class', 'grid');
-// //apend the grid section to the game board game inside the div
-// game.appendChild(grid)
-
-// // set count to 0
-// var count = 0;
-
-// loop our items in array
-// for ( i=0; i< displayCardsArray.length; i++ ) {
-// // create a div element and assign to each variable / cards
-// var card = document.createElement('div');
-// // apply the cards to the div
-// card.classList.add('card');
-// // apply the background image of the div to the cards array
-// card.dataset.name = gameGrid[i].name;
-// // in this case another array (index card)
-// card.style.backgroundImage = `url(${gameGrid[i].img})`;
-// // append the div the the grid section
-// grid.appendChild(card);
-// };
-
-// // add event listener to grid
-// grid.addEventListener('click', function(event) {
-//     //declare varribale to target our clicked card
-//     var clicked = event.target;
-//     // do not allow the grid section itself to be selected
-//     // only select divs inside the grid
-//     if(clicked.nodeName === 'SECTION'){
-//         return;
-//     }
-//     // // // we only want to add 'selected' class if the current count is less than 2
-//     if (count < 2) {
-//         count++;
-//     }
-//     // add selected class
-//     clicked.classList.add('selected');
-// });
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
 
