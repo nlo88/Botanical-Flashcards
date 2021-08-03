@@ -84,7 +84,7 @@ displayCardsArray.forEach(function(displayCard) {
             matchingIndexImg.src = match.img;
             indexImg.appendChild(matchingIndexImg)
             
-            
+
             const imgLink = document.createElement('a')
             imgLink.href = `https://en.wikipedia.org/wiki/${match.name}`
             imgLink.innerHTML = "more info..";

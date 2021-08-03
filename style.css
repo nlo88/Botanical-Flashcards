@@ -19,10 +19,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: transparent;
+    box-shadow: 3px 2px 8px rgba(70, 61, 61, 0.5);
     padding: 1rem 1.5rem;
-    width: 24rem;
-    border-radius: 0.5rem;
+    border-radius: 13px;
+
+    
 }
 .close-button {
     float: right;
@@ -30,11 +32,12 @@
     line-height: 1.5rem;
     text-align: center;
     cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
+    border-radius: 13px;
+    background-color: transparent;
 }
 .close-button:hover {
-    background-color: darkgray;
+    background-color: transparent;
+    
 }
 .show-modal {
     opacity: 1;
@@ -53,6 +56,12 @@
     pointer-events: none;
 }
 
+a {
+    font-size: 0.5em;
+    color: green;
+    font-weight: bold;
+    float: right;
+}
 
 body {
     margin: auto;
@@ -72,8 +81,12 @@ body {
 }
 
 h3 {
-    margin-bottom: 2em;
-    font-size: 23px;
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 50px;
+    font-family: 'Raleway Dots', cursive;
+    color: black;
+    
 }
 
 #image-container {
@@ -84,16 +97,10 @@ h3 {
     flex-direction: column;
     overflow: hidden;
     margin: auto;
-    /* height: 400px;
-    border: 3px solid black;
-    /* position: relative; */
-
-
-    /* background-size: contain; */
-    /* background-position: center center; */
 }
 
 img {
+    width: 100%;
     margin: 0 auto;
     display: flex;
     max-width: 200px;
@@ -105,3 +112,10 @@ img {
     box-shadow: 3px 2px 10px rgba(70, 61, 61, 0.5);
     transition: transform 200ms ease-in-out;
 }
+
+.index-card {
+    width: 100%;
+    max-width: 200px;
+    max-height: fit-content;
+}
+
