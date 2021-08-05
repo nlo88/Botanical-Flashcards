@@ -33,8 +33,8 @@ I created a collection of 30 Magical Hebs and Spices flashcard for educational p
 # Acknowledgment:
 
 - General Assembly
+- Kim B Kruedelbach
 - Dylan Guma
-- Kim B Kruedelbach 
 
 
 
