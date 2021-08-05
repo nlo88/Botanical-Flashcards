@@ -3,7 +3,7 @@
 
 Purpose:
 
-I created a collection of medicinal herbs and spices flashcard. The idea is for the users can easily access the collection of information, be able to bookmark it in their computer browser / tablet. I use water color botanical print to achive the timeless and classic look.
+I created a collection of medicinal herbs and spices flashcard. The idea is for the user can easily access the collection of information. I use water color botanical print to achive the timeless and classic look.
 
 Wireframes:
 ![Medicinal Botanic Flash Cards](https://user-images.githubusercontent.com/78662511/128295900-bce8d7d7-769a-4825-89e4-a4a815e30a78.jpg)
