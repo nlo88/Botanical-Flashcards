@@ -87,19 +87,33 @@ displayCardsArray.forEach(function(displayCard) {
             let match = indexCardsArray.find(element => element.name === displayCard.name )
             console.log(match)
 
-
             // element IndexImg is created to select the div class name = index-card
             const indexImg = document.querySelector('.index-card');
             // set the element null to stop IndexImg to show more than one image
             indexImg.innerHTML = "";
             
-
             // matchingIndexImg is to create new element called img
             const displayMatchingIndexImg =document.createElement('img');
+            
+            // const addLink =document.createElement('a')
+            
+            // addLink.appendChild(indexImg)
+            // console.log(addLink)
+            // console.log(indexImg)
+
+
             // on the new element img, we want to assign the displayMatchingIndexImg with the match.image
             displayMatchingIndexImg.src = match.img;
             //indexImg is the child of div with class img
             indexImg.appendChild(displayMatchingIndexImg)
+            
+
+                  
+            // let addLink =document.getElementsByTagName('a')
+            // addLink.href = `https://en.wikipedia.org/wiki/${match.name}`
+            // addLink.text = "more info..";
+             
+            // console.log(addLink)  
             
             
             //imgLink is to create an a tag element with the text link to wikipedia page
@@ -126,40 +140,15 @@ function windowOnClick(event) {
     if (event.target === openModal) {
         toggleModal();
     }
+
 }
-
-function addSound (src) {
-    this.addSound = document.createElement("audio");
-    this.addSound.src = src;
-    this.addSound.style.display = "none";
-    document.img.appendChild(this.addSound);
-    this.play = function () {
-        this.sound.play();
-    }
-    this.stop = function(){
-        this.sound.pause();
-    }
-}
-
-
-// function zoomIn(){
-//     var body =document.querySelector('body');
-//     var currentWidth = body.clientWidth;
-//     if (currentWidth == 1000000) {
-//         alert ("Maximum zoom-in level 1mill reached!");
-//         }
-//     else {
-//         body.style.width = (currentWidth +50) + "px";
-//     }
-// }
-
-
-// function zoomOut (){
-//     var body = document.querySelector('body');
-//     var currentWidth = body
-
-// }
 
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+
+
+
+
+
 
