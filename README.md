@@ -3,7 +3,7 @@
 
 # Purpose:
 
-I created a collection of 30 Magical Hebs and Spices and Powerful Health Benefits flashcard for educational purposes. I use water-color botanical print to achive a timeless and classic look.
+I created a collection of 30 Magical Hebs and Spices flashcard for educational purposes. I use water-color botanical print to achive a timeless and classic look.
 
 # Wireframes:
 ![Medicinal Botanic Flash Cards](https://user-images.githubusercontent.com/78662511/128295900-bce8d7d7-769a-4825-89e4-a4a815e30a78.jpg)
