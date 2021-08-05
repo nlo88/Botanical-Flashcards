@@ -1,34 +1,31 @@
 
-# Botanical-Flashcards : Educational App
+# Educational Flashcards
+
+Intro:
+
+I truly believe the benefits of natural remedies. so I created a collection of medicinal herbs and spices. The purpose of this is so the users can easily access the collection of information. 
+
+Wireframes:
+
+![Getting Started](./Medicinal Botanic Flash Cards.jpg)
+
+![Getting Started](./Medicinal Botanic Flash Cards.jpg)
 
 
-# Requirements: 
-- Built on HTML, CSS, JavaScript, and Jquery --0 done
-- Hosted on github pages --- done
-- Commits to github pages --- 
-- README.md file --- done
-- Use AJAX to make external data --- not applicable with this project as i purchased digital file of watercolor flash cards from etsy. 
-- Instead, i upload images to my github page and insert and retrieve the data into the DOM.
 
-- Responsive Design --- done
+# Technologies requirements:
 
-# Stretch Features:
+- HTML, CSS, and JavaScript
+- DOM and Events Listener
+- Responsive Design
+- Host it on personal own GitHub Pages
+- git commits daily
+
+
+# Bonus Features:
 - Downloadable cards
 - Printable Cards
 - Zoom in Zoom out
-
-# Features included:
-- Display the image flash cards in 5 x 6 grid -- done
-- Create click-able cards -- done
-- Set clicked / selected cards with border -- done
-
-# Extra Features:
-- Random function everytime the page refresh 
-- Include button to arrange the cards alphabetically 
-- Zoom in and out 
-- Downloadable 
-- Printable
-- Pop up disclaimer page
 
 
 

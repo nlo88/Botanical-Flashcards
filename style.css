@@ -32,6 +32,18 @@
     
 }
 
+
+a {
+    font-size: 1em;
+    color: green;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background:rgb(247, 190, 5);
+    visibility:visible;
+}
 .modal-container .modal img {
     max-width: 100%;
     display: block;
@@ -40,6 +52,18 @@
 .modal-container.show {
     pointer-events: auto;
     opacity: 1;
+}
+
+.modal-container a {
+    font-size: 1em;
+    color: green;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background:rgb(247, 190, 5);
+    visibility:visible;
 }
 
 .close-button {
@@ -54,6 +78,8 @@
 }
 
 
+
+
 .show-modal {
     opacity: 1;
     visibility: visible;
@@ -61,17 +87,6 @@
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-a {
-    font-size: 1em;
-    color: green;
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    background:rgb(247, 190, 5);
-    visibility:visible;
-}
 
 
 body {
