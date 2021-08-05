@@ -29,7 +29,8 @@ I created a collection of 30 Magical Hebs and Spices and Powerful Health Benefit
 - Add in sound effect , pronunciation of each cards
 
 
-# Acknoledgment: 
+
+# acknowledgment:
 
 - General Assembly
 - Dylan Guma
