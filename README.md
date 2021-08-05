@@ -12,7 +12,7 @@ I created a collection of 30 Magical Hebs and Spices flashcard for educational p
 # User Stories: 
 - The user can easily access this collection of information, and welcome to bookmark it in their computer / tablet browser.
 
-# Technologies requirements:
+# Requirements:
 
 - HTML, CSS, and JavaScript
 - DOM and Events Listener
