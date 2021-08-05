@@ -1,9 +1,9 @@
 
-# Educational Flashcards
+# Botanical Flashcards
 
-Intro:
+Purpose:
 
-I truly believe the benefits of natural remedies. so I created a collection of medicinal herbs and spices. The purpose of this is so the users can easily access the collection of information. 
+I created a collection of medicinal herbs and spices flashcard. The idea is for the users can easily access the collection of information, be able to bookmark it in their computer browser / tablet. I use water color botanical print to achive the timeless and classic look.
 
 Wireframes:
 ![Medicinal Botanic Flash Cards](https://user-images.githubusercontent.com/78662511/128295900-bce8d7d7-769a-4825-89e4-a4a815e30a78.jpg)
@@ -15,14 +15,24 @@ Wireframes:
 - HTML, CSS, and JavaScript
 - DOM and Events Listener
 - Responsive Design
-- Host it on personal own GitHub Pages
-- git commits daily
+- Host on personal GitHub Pages
+- Git commits daily
 
 
-# Bonus Features:
+# Stretch Goals:
+
 - Downloadable cards
-- Printable Cards
+- Printable
 - Zoom in Zoom out
+- Add in sound effect , pronunciation of each cards
+
+
+# Acknoledgment: 
+
+- General Assembly
+- Dylan Guma
+- Kim B Kruedelbach 
+
 
 
 
