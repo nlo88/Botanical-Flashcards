@@ -30,7 +30,7 @@ I created a collection of 30 Magical Hebs and Spices and Powerful Health Benefit
 
 
 
-# acknowledgment:
+# Acknowledgment:
 
 - General Assembly
 - Dylan Guma
